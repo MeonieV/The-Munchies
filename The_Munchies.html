@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<!-- Author: Meonie Vrey C22132 -->
+
+<html>
+    <head>
+        <title>The Munchies | Recipe App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="The_Munchies.css"> <!-- Style sheet -->
+        <link rel="icon" href="images/TM_Icon.png"> <!--Page Icon-->
+    </head>
+    <body>
+    <div id="content">
+        <h1>The Munchies</h1>
+      <!-- Search query-->
+      <input type="text" id="userInput" onkeyup="search()" placeholder="Search for recipe...">
+      <button id="return" onClick="back()">Return</button>
+
+      
+       <!--Buttons for the meals-->
+       <ul class="mealLists" id="recipeList">
+          <li><button data-id="brownies" class="button">Brownies</button></li>
+          <li><button data-id="cake" class="button">Chocolate cake</button></li>
+          <li><button data-id="mousse" class="button">Chocolate Mousse</button></li>
+          <li><button data-id="cheesecake" class="button">Cheesecake</button></li>
+          <li><button data-id="cookies" class="button">Cookies</button></li>
+          <li><button data-id="fudge" class="button">Fudge</button></li>
+          <li><button data-id="milkshake" class="button">Milkshake</button></li>
+          <li><button data-id="smore" class="button">S'mores</button></li>
+          <li><button data-id="cupcake" class="button">Vanilla Cupcakes</button></li>
+       </ul>
+      
+       <!-- div containers for the meals' content-->
+
+          <div id="brownies" class="meals">
+        <button class="showButton" onclick="showRecipe()">view recipe</button>
+        <img src="images/brownies.jpg" alt="Brownies" width= "200" height= "300">
+        <h2>Brownies Ingredients: </h2>
+        <ul> 
+            <li>2 cups white sugar</li>
+            <li>1 1/2 cups all-purpose flour</li>
+            <li>1 cup butter, melted</li>
+            <li>4 eggs</li>
+            <li>1/2 cup cocoa powder</li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>1/2 teaspoon baking powder</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1/2 cup walnut halves</li>
+        </ul>
+    
+        <div id="brownies_recipe" class="recipe">
+            <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>Brownies Recipe: </h2>
+            <ol>
+                <li>Preheat the oven to 350 degrees F (175 degrees C). Grease a 9x13-inch pan.</li>
+                <li>Mix sugar, flour, melted butter, eggs, cocoa powder, vanilla, baking powder, and salt in a large bowl until combined. Spread the batter into the prepared pan. Decorate with walnut halves.</li>
+                <li>Bake in the preheated oven until top is dry and edges have started to pull away from the sides of the pan, about 20 to 30 minutes; cool before slicing into squares.</li>
+            </ol>
+        </div>
+       </div>
+       
+       
+       <div id="cake" class="meals">
+        <button class="showButton" onclick="showRecipe()">view recipe</button> 
+        <img src="images/chocolateCake.jpg" alt="Chocolate Cake" width= "300" height= "300">
+        <h2>Chocolate cake Ingredients: </h2>
+            <p> Cake: </p>
+        <ul> 
+            <li> 1 cup unsweetened cocoa powder </li>
+            <li> 2 cups boiling water </li>
+            <li> 2 3/4 cups all-purpose flour </li>
+            <li> 2 teaspoons baking soda </li>
+            <li>1/2 teaspoon salt</li>
+            <li>1/2 teaspoon baking powder</li>
+            <li>2 1/2 cups white sugar</li>
+            <li>1 cup unsalted butter, softened</li>
+            <li>4 large eggs </li>
+            <li> 1 1/2 teaspoons vanilla extract</li>
+        </ul>
+          
+           <p> Frosting: </p> 
+        <ul> 
+            <li> 1/3 cup unsalted butter, softened</li>
+            <li> 2 cups confectioners' sugar </li>
+            <li> 2 tablespoons unsweetened cocoa powder </li>
+            <li> 1 teaspoon vanilla extract </li>
+        </ul>
+    
+            <p> Filling: </p>
+        <ul> 
+            <li> 1 pint heavy whipping cream </li>
+            <li> 1 teaspoon vanilla extract </li>
+            <li> 1 cup confectioners' sugar </li>
+        </ul>
+            
+            <div id="cake_recipe" class="recipe">
+                <button class="hideButton" onclick="hideRecipe()">x</button>
+                <h2>Chocolate cake Recipe: </h2>
+                <ol>
+                    <li>Start cake: Place cocoa in a medium bowl. Gently pour boiling water over top and stir to combine; let cool, about 15 minutes.</li>
+                    <li>Meanwhile, preheat the oven to 350 degrees F (175 degrees C). Grease and flour three 9-inch round cake pans.</li>
+                    <li> Sift together flour, baking soda, salt, and baking powder into a mixing bowl. </li>
+                    <li>Combine sugar and butter in a large mixing bowl; beat with an electric mixer until creamy. Add eggs, one at a time, mixing well after each addition. Stir in vanilla. Add flour mixture alternately with the cooled cocoa mixture, mixing only until combined. Pour 1/3 of the cake batter into each of the prepared pans, spreading evenly.</li>
+                    <li>Bake in the preheated oven until a toothpick inserted into the centers comes out clean and cakes pull away from the sides of the pans, 18 to 22 minutes. Remove cakes from the oven and set on a wire rack to cool for about 5 minutes. Run a table knife around the edges to loosen. Invert cakes carefully onto the wire rack and let cool completely, about 20 more minutes.</li>
+                    <li>While the cakes are cooling, make frosting and filling: Beat butter for frosting in a mixing bowl until creamy. Gradually mix in confectioners' sugar, cocoa, and vanilla; continue to mix until light and fluffy, 7 to 10 minutes. Set aside.</li>
+                    <li>Make filling: Whip heavy cream and vanilla in a bowl until cream becomes thick. Add confectioners' sugar and continue to whip until stiff but not too grainy.</li>
+                    <li>Fill and frost cake: Remove cooled cake layers from pans. Trim any top surfaces to make them flat. Place one layer on a nice plate and spread 1/3 of the filling over the top. Top with another layer and another 1/2 of the remaining filling. Place the remaining cake layer on top. Spread frosting around the sides of the layers, leaving a ridge that extends up over the top edge. Spread the remaining filling over the top of the cake, inside the ridge of frosting.</li>
+                </ol>
+            </div>
+       </div>
+       
+       
+       <div id="mousse" class="meals">
+       <button class="showButton" onclick="showRecipe()">view recipe</button>
+       <img src="images/mousse.jpg" alt="Chocolate Mousse" width= "300" height= "300">
+       
+       <h2> Chocolate Mousse Ingredients: </h2>
+       <ul>
+           <li>1 cup semi-sweet chocolate chips</li>
+           <li>5 tablespoons boiling water</li>
+           <li>4 large eggs, separated and divided</li>
+       </ul>
+           
+       <div id="mousse_recipe" class="recipe">
+           <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>Chocolate Mousse Recipe: </h2>
+            <ol>
+                <li>Place chocolate chips in a blender; pulse until ground. Add boiling water and blend until chocolate is melted. Add egg yolks, one at a time, blending well after each addition; transfer to a mixing bowl.</li>
+                <li>Beat egg whites in a glass, metal, or ceramic bowl until stiff peaks form. Gently fold egg whites into chocolate mixture. Pour mousse into wine glasses or other serving glasses and chill in the refrigerator until set, 2 to 3 hours.</li>
+            </ol>
+       </div>
+       </div>
+       
+       
+        <div id="cheesecake" class="meals">
+       <button class="showButton" onclick="showRecipe()">view recipe</button>
+       <img src="images/cheesecake.jpg" alt="Cheesecake" width= "300" height= "300">
+        <h2>Cheesecake Ingredients: </h2>
+        <ul> 
+            <li> 1 (9 inch) prepared graham cracker crust </li>
+            <li> 16 ounces cream cheese </li>
+            <li> 2 eggs </li>
+            <li> 3/4 cup white sugar </li>
+            <li>2 teaspoons vanilla extract</li>
+            <li>1/2 teaspoon grated lemon zest</li>
+        </ul>
+        
+        <div id="cheesecake_recipe" class="recipe">
+            <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>Cheesecake Recipe: </h2>
+            <ol>
+                <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+                <li>Beat softened cream cheese slightly. Add eggs, sugar, vanilla, and lemon zest. Beat until light and fluffy. Pour mixture into crust.</li>
+                <li>Bake at 350 degrees F (175 degrees C) until firm, about 25 minutes. Let cheesecake cool then top with cherry or blueberry pie filling, if desired. Refrigerate for at least 8 hours before serving.</li>
+            </ol>
+        </div>
+       </div>
+       
+              
+       <div id="cookies" class="meals">
+        <button class="showButton" onclick="showRecipe()">view recipe</button>
+        <img src="images/cookies.jpg" alt="Cookies" width= "300" height= "200">
+        <h2>Cookies Ingredients: </h2>
+        <ul> 
+            <li> 1 cup butter, softened </li>
+            <li> 1 cup white sugar </li>
+            <li> 1 cup packed brown sugar </li>
+            <li> 2 eggs </li>
+            <li> 2 teaspoons vanilla extract </li>
+            <li> 1 teaspoon baking soda </li>
+            <li> 2 teaspoons hot water </li>
+            <li> 1/2 teaspoon salt</li>
+            <li> 3 cups all-purpose flour </li>
+            <li> 2 cups semisweet chocolate chips </li>
+            <li> 1 cup chopped walnuts </li>
+        </ul>
+        
+       
+        <div id="cookie_recipe" class="recipe">
+            <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>Cookies Recipe: </h2>
+            <ol>
+                <li>Gather your ingredients, making sure your butter is softened, and your eggs are room temperature.</li>
+                <li>Preheat the oven to 350 degrees F (175 degrees C).</li>
+                <li> Beat butter, white sugar, and brown sugar with an electric mixer in a large bowl until smooth. </li>
+                <li>Beat in eggs, one at a time, then stir in vanilla.</li>
+                <li>Dissolve baking soda in hot water. Add to batter along with salt.</li>
+                <li>Stir in flour, chocolate chips, and walnuts.</li>
+                <li>Drop spoonfuls of dough 2 inches apart onto ungreased baking sheets.</li>
+                <li>Bake in the preheated oven until edges are nicely browned, about 10 minutes.</li>
+                <li>Cool on the baking sheets briefly before removing to a wire rack to cool completely.</li>
+                <li>Store in an airtight container or serve immediately and enjoy!</li>
+            </ol>
+        </div>
+       </div>
+       
+       
+        <div id="fudge" class="meals">
+       <button class="showButton" onclick="showRecipe()">view recipe</button>
+       <img src="images/fudge.jpg" alt="Fudge" width= "200" height= "200">
+       
+       <h2> Fudge Ingredients: </h2>
+       <ul>
+           <li>3 cups semisweet chocolate chips</li>
+           <li>1 (14 ounce) can sweetened condensed milk</li>
+           <li>1/4 cup unsalted butter, cut into pieces</li>
+           <li> 1 cup chopped walnuts (Optional)</li>
+       </ul>
+           
+       <div id="fudge_recipe" class="recipe">
+           <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>Fudge Recipe: </h2>
+            <ol>
+                <li>Combine chocolate chips, condensed milk, and butter in large microwave-safe bowl. Microwave on medium heat until chips are melted, 3 to 5 minutes, stirring once or twice during the cooking.</li>
+                <li>Meanwhile, generously grease an 8-inch square glass baking dish.</li>
+                <li>Remove chocolate mixture from the microwave and stir in nuts. Pour into the prepared dish.</li>
+                <li>Refrigerate until fudge is set, about 2 hours.</li>
+                <li>Cut into 16 squares.</li>
+            </ol>
+       </div>
+       </div>
+       
+       
+       <div id="milkshake" class="meals">
+       <button class="showButton" onclick="showRecipe()">view recipe</button>
+        <img src="images/milkshake.jpg" alt="Milkshake" width= "300" height= "300">
+        <h2>Milkshake Ingredients: </h2>
+        <ul> 
+            <li> 2 cups vanilla ice cream </li>
+            <li> 1 cup whole milk </li>
+            <li> 1 teaspoon vanilla extract </li>
+        </ul>
+        
+        <div id="milkshake_recipe" class="recipe">
+            <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>Milkshake Recipe: </h2>
+            <ol>
+                <li>Blend ice cream, milk, and vanilla extract together in a blender until smooth.</li>
+                <li>Pour into glasses and serve.</li>
+            </ol>
+        </div>
+       </div>
+       
+       
+       <div id="smore" class="meals">
+       <button class="showButton" onclick="showRecipe()">view recipe</button>
+       <img src="images/smore.jpg" alt="Smores" width= "300" height= "300">
+          
+       <h2> S'mores Ingredients: </h2>
+       <ul>
+           <li>1 large marshmallow</li>
+           <li>1 graham cracker</li>
+           <li>1 (1.5 ounce) bar chocolate candy bar</li>
+       </ul>
+           
+       <div id="smore_recipe" class="recipe">
+           <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>S'mores Recipe: </h2>
+            <ol>
+                <li>Heat marshmallow over an open flame until it begins to brown and melt.</li>
+                <li>Break graham cracker in half; sandwich chocolate between graham cracker and hot marshmallow. Allow marshmallow to cool a little before eating.</li>
+            </ol>
+       </div>
+       </div>
+       
+       
+       <div id="cupcake" class="meals">
+       <button class="showButton" onclick="showRecipe()">view recipe</button>
+       <img src="images/cupcake.jpg" alt="Vanilla Cupcakes" width= "200" height= "150">
+       
+       <h2> Vanilla Cupcakes Ingredients: </h2>
+       <ul>
+           <li>3/4 cup superfine sugar</li>
+           <li>2/3 cup butter, softened</li>
+           <li>3 large eggs</li>
+           <li>1 1/2 cups self-rising flour</li>
+           <li>1 teaspoon vanilla extract</li>
+       </ul>
+           
+       <div id="cupcake_recipe" class="recipe">
+           <button class="hideButton" onclick="hideRecipe()">x</button>
+            <h2>Vanilla Cupcakes Recipe: </h2>
+            <ol>
+                <li>Preheat the oven to 350 degrees F (175 degrees C). Grease a 12-cup muffin tin or line cups with paper liners.</li>
+                <li>Beat sugar and butter together in a large bowl with an electric mixer until light and fluffy. Add eggs one at a time, beating well after each addition. Beat in vanilla extract. Stir in flour just until mixed; spoon batter into the prepared muffin cups, filling each 3/4 full.</li>
+                <li>Bake in the preheated oven until the tops spring back when lightly pressed, 18 to 20 minutes. Cool in the tin briefly before transferring to a wire rack to cool completely.</li>
+            </ol>
+       </div>
+       </div>
+       
+    </div>
+
+    <!-- List of references -->    
+    <footer>       
+        <p><strong> Copyright &copy; The Munchies 2023 &#9679; </strong>References:<a href="https://www.allrecipes.com/" target="_blank">All Recipes</a>,
+            <a href="https://www.pexels.com/" target="_blank">Pexels Images</a> and <a href="https://unsplash.com/" target="_blank">Unsplash Images</a></p>
+    </footer> 
+        
+    <!-- Script -->
+    <script src="The_Munchies.js"></script>
+    </body> 
+</html>

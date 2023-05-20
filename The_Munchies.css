@@ -1,0 +1,182 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 28 Apr 2023, 12:04:56
+    Author: Meonie Vrey C22132
+*/
+
+/*Background image*/
+body {
+  background-image: url("images/wheat.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Style the content box*/
+#content {
+    background-color: #faf3e3;
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 25px 50px 220px 40px;
+    margin-top: 50px;
+}
+
+/* Makes images responsive */
+img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin: 10px;
+}
+
+/* Search bar image and size */
+#userInput {
+  background-image: url('images/search.png');
+  background-position: 0px 6px;
+  background-repeat: no-repeat;
+  width: auto;
+  font-size: 16px;
+  padding: 12px 10px 2px 20px;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #47ad8a;
+  width: 50%;
+  background-color: #faf3e3;
+}
+
+/*Style the recipe content when it's visable'*/
+.recipe {
+    position: absolute;
+    top: 140px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    background-color: #faf3e3;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+#recipeList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+  padding: 10px;
+}
+
+/*Styles the buttons and make them responsive*/
+.button {
+  background-color: #faf3e3;
+  border: 2px solid #47ad8a;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  float: left;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  display: block;
+  transition-duration: 0.4s;
+}
+
+.showButton {
+    background-color: #47ad4b;
+    position: absolute;
+    left:70%;
+    width: 100%;
+    max-width: 25%;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.hideButton {
+    background-color: #47ad4b; 
+    position: relative;
+    top: 35px;
+    left: 80%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+#return {
+  background-color: #47ad4b;
+  border: none;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 12px;
+  position: absolute;
+  left: 60%;
+}
+
+/*Adds a shadow when the user hovers over the buttons*/
+button:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24);
+    background-color: #47ad4b;
+    color: white;
+}
+
+/*Hides the meal and recipe buttons*/
+.meals, .recipe{
+font-size: 20px;
+display: none;
+margin-top: 100px;
+}
+
+
+
+/*Hides the irrelevant buttons once user inputs something in the search query*/
+.show{
+display: block;
+}
+
+/*Stylize the fonts and text sizes*/
+h1, button {
+    font-family: Verdana;
+}
+
+h2 {
+    font-family: Georgia;
+    font-size: 28px;
+}
+
+li{
+    font-family: Times New Roman;
+    font-size: 18px;
+}
+
+p {
+    font-family: Times New Roman;
+}
+
+/*Style footer section*/
+footer {
+    position: fixed;
+    bottom:0px;
+    left: 0;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 10px;
+    border-top: 2px solid #000;
+    background-color: tan;
+}
+
+/*Color the links*/
+a:link {color: lightgreen;}
+a:visited {color: green;}
+a:hover {color: aquamarine;}
+a:active {color: lime;}
+
